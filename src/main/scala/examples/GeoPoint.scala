@@ -16,7 +16,10 @@ class GeoPoint {
       printWarning()
   }
 
+  // defines a function that returns _longitude value, getter
   def longitude: Float = _longitude
+
+  // defines a function that sets a new value to _longitude, setter
   def longitude_=(newValue: Float): Unit = {
     if (newValue < bound)
       _longitude = newValue
@@ -38,8 +41,9 @@ object GeoPoint {
   def main(args: Array[String]): Unit = {
     val point1 = new GeoPoint
     point1.latitude = 99
-    point1.longitude = 101 // prints the warning
-    print(point1)
+    point1.longitude = 101 // calls the setter and prints the warning if met condition
+    println(point1)
+    println(point1.longitude) //calls getter
   }
 }
 
