@@ -8,12 +8,12 @@ class Test {
     case _ => println("This is an invalid value")
   }
 
-  def getPrimeNumbers(number: Int) {
-    for(i )
+  def Function1(number: Int) {
+    //for(i )
   }
 
   def Function2(number: Int) {
-    Do Something
+    //Do Something
   }
 
 }
