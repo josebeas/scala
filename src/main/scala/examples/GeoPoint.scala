@@ -27,8 +27,9 @@ class GeoPoint {
       printWarning()
   }
 
-  private def printWarning(): Unit =
+  private def printWarning() : Unit = {
     println("WARNING: Out of bounds")
+  }
 
   override def toString() : String = {
     return "[Longitude : " + longitude +

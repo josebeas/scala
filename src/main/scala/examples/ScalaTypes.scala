@@ -13,7 +13,7 @@ object ScalaTypes {
       println("Initialized")
       "Jose Beas"
     }
-
+    //println(name)
     println("Data types")
     // Any --> AnyRef -> Object -> Classes (List, Option, OwnClasses) -> Null
     // Any --> AnyVal -> Lang Types (Int, Double, Float, Char, Short, Long, Byte, Unit, Boolean) -> Nothing

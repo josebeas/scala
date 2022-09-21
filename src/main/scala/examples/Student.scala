@@ -7,11 +7,11 @@ case class Student(name:String, age:Int, score:Double)
 object CaseClass {
   def main(args: Array[String]): Unit = {
     // This line does not compile since default constructor requires two parameters
-    //val Foy = Student("Foy")
+    //val Foy = Student("Foy", null, null)
 
     // calls out the default constructor, the only one available
     var jose = Student("Jose", 35, 82.4)
-
+    jose = Student("Jose", 36, 82.4)
     // this line fails to compile also since case class are immutable, means does not change any of its values
     //jose.name = "Jose Beas"
 

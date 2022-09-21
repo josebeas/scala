@@ -13,11 +13,12 @@
 ### Scala Intermediate
 * Constructors -- Person.scala
 * Immutability -- Student.scala(15) 
-* Traits
-* Implicits
+* Traits -- Traits.scala
+* Implicits -- Implicits.scala, ComparartorTests.scala
+* Collections -- Immutables.scala
 * Pattern Matching
 
 ### Scala Advanced
-* 
-* Collections -- Immutables.scala
+
 * Functions
+* Spark
