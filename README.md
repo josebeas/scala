@@ -20,4 +20,8 @@
 
 ### Scala Advanced Spark
 * Pattern Matching -- Matching.scala, MatchClasses.scla
-* Spark -- SparkSamples.scala
+* Spark -- SparkSamples.scala 
+
+
+Links
+* https://github.com/steveloughran/winutils/tree/master/hadoop-3.0.0/bin
