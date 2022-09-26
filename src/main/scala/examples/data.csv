@@ -1,0 +1,6 @@
+firstname, middlename, lastname, dob, gender, salary
+"jose", "Antonio", "Beas", "1987-09-18", "M", 3000
+"Juan", "", "Bustos", "1990-05-19", "M", 4000
+"Foy", "", "Barrantes", "1990-09-05", "M", 4000
+"Elias", "", "Sanchez", "1990-12-01", "F", 4000
+"Daniel", "", "Diaz", "1990-02-17", "F", 5000

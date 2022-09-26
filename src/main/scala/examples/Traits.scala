@@ -108,8 +108,9 @@ trait SixSigma // general quality standards
 
 // this works
 class EnterpriseEmployee extends Employee with AdminEmployee with CollegeDegree with SixSigma
+
 // won't compile
-//class EnterpriseEmployee extends Employee with AdminEmployee with CollegeDegree
+//class EnterpriseEmployee2 extends Employee with AdminEmployee with CollegeDegree
 
 object TraitsSamples {
 

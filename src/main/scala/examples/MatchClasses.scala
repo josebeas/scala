@@ -9,11 +9,13 @@ class Test {
   }
 
   def Function1(number: Int) {
-    //for(i )
+    for(value <- 0 to number){
+      println("number " + value)
+    }
   }
 
   def Function2(number: Int) {
-    //Do Something
+    println("number " + number)
   }
 
 }
@@ -21,7 +23,9 @@ class Test {
 object MatchPatternsSamples {
 
   def main(args: Array[String]): Unit = {
-
-
+    val test: Test = new Test
+    test.getValue("nonHandled")
+    test.getValue("Value1")
+    test.getValue("Value2")
   }
 }

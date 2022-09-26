@@ -1,5 +1,7 @@
 package examples
 
+import scala.::
+
 
 object Immutables {
   def main(args: Array[String]): Unit = {
@@ -33,12 +35,14 @@ object Immutables {
 
     //creating uniform lists,
     // this will create as first parameter number of elements of second parameter
+    println("creating uniform lists")
     val seven1 = List.fill(7)(1)
     println(seven1)
+    
 
     // tabulate function
     //creates a list of 7 elements with the result of given function, using each list member as parameter
-    val twice = List.tabulate(7)(n => n*2)
+    val twice = List.tabulate(7)(n => n * 2)
     println(twice)
 
     //we can send two parameters to tabulate function:

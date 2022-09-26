@@ -40,7 +40,8 @@ object Person {
     println(p1)
 
     //implicitly calls apply method
-    val p2 = Person(Some("Pedro Picapiedra"))
+    val p2 = Person(Option("Pedro Picapiedra"))
+    //val p9 = Person(Some(None))
     println(p2)
 
     // same as p1
@@ -72,9 +73,9 @@ object Person {
     // prints Some(Wilma), Some(33000000) since unapply returns similar value to toString method
     // change unapply to look like this and uncomment next prints statements
     //  def unapply(p: Person): Tuple2[String, Int] = (p.name, p.age)
-    // println(result._1.get) //make sure you check element _1 exists
-    // println(result._2.get) //make sure you check element _2 exists
-    // println(if (result._2 != null) result._2.get else -1) // you can check element _2 exists using shorthand if
+    println(result._1.get) //make sure you check element _1 exists
+    println(result._2.get) //make sure you check element _2 exists
+    println(if (result._2 != null) result._2.get else -1) // you can check element _2 exists using shorthand if
 
     //Since we defined this method as no return method this line has no effect
     p1

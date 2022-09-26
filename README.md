@@ -16,9 +16,8 @@
 * Traits -- Traits.scala
 * Implicits -- Implicits.scala, ComparartorTests.scala
 * Collections -- Immutables.scala
-* Pattern Matching
 
-### Scala Advanced
 
-* Functions
-* Spark
+### Scala Advanced Spark
+* Pattern Matching -- Matching.scala, MatchClasses.scla
+* Spark -- SparkSamples.scala
