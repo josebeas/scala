@@ -19,8 +19,11 @@
 
 
 ### Scala Advanced Spark
-* Pattern Matching -- Matching.scala, MatchClasses.scla
+* Pattern Matching -- Matching.scala, MatchClasses.scala
 * Spark -- SparkSamples.scala 
+
+### Missing Parts
+* Functions -- Functions.scala
 
 
 Links

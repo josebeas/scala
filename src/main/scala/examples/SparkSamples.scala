@@ -32,9 +32,11 @@ object SparkSamples {
     val columns = Seq("firstname", "middlename", "lastname", "dob", "gender", "salary")
 
     // creates a dataframe using data from data seq and columns names from columns seq
-    val df = spark.sparkContext
+    val df = spark
+        .sparkContext
         .parallelize(data)
         .toDF(columns : _*)
+        //.toDF("firstname", "middlename", "lastname", "dob", "gender", "salary")
     df.show(20)
 
 
@@ -64,7 +66,7 @@ object SparkSamples {
         .filter($"salary" > 3000) //using $ implicit import
         .filter(col("salary") < 50000) //using col function
         .filter(dfUnion("salary") < 10000) //using col name from specific dataframe
-        .filter("gender == 'M'") // using sql expression
+        .filter("salary == 3000") // using sql expression
 
     dfUnique
       .withColumnRenamed("gender", "Gender") //renames columns
@@ -102,7 +104,10 @@ object SparkSamples {
     val dfWitDefaultSchema = spark.createDataFrame(rdd)
     dfWitDefaultSchema.printSchema()
     //since newer spark versions only supports RDD of Row, creating RDD[Row] object
-    val rowRDD : RDD[Row] = rdd.map(t => Row(t._1, t._2, t._3, t._4, t._5, t._6))
+    val rowRDD : RDD[Row] = rdd.map(t => {
+      println("inside of map fcn")
+      Row(t._1, t._2, t._3, t._4, t._5, t._6)
+    })
 
     //structured schema
     val arrayStructureSchema = new StructType()
